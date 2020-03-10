@@ -1,0 +1,24 @@
+package com.epam.practice;
+
+public class Main {
+    public static void main(String[] arg) {
+        starsFirstPart(7);
+        starsSecondPart(7);
+    }
+
+    public static void starsFirstPart(int count) {
+        for (int i = 0; i < count; ++i) {
+            for (int j = 0; j < i; ++j)
+                System.out.print("*");
+            System.out.println();
+        }
+    }
+
+    public static void starsSecondPart(int count) {
+        for (int i = 0; i < count; ++i) {
+            for (int j = count; j > i; --j)
+                System.out.print("*");
+            System.out.println();
+        }
+    }
+}
